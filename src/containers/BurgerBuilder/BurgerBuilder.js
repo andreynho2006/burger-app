@@ -52,7 +52,9 @@ class BurgerBuilder extends Component {
         return (
             <HigherOrderComponent>
                 <Burger ingredients={this.state.ingredients} />
-                <BuildControls ingredientAdded = {this.addIngredientHandler} />
+                <BuildControls 
+                    ingredientAdded = {this.addIngredientHandler} 
+                    ingredientRemoved = {this.removeIngredientHandler} />
             </HigherOrderComponent>
         );
     }
