@@ -3,6 +3,8 @@ import HigherOrderComponent from '../../../hoc/HigherOrderComponent';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
+    // This could be a functional component
+    //it's a class only for debugging
     componentWillUpdate() {
         console.log("Orders summary will update");
     }
